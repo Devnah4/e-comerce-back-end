@@ -5,9 +5,30 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // get all products
 router.get('/', (req, res) => {
-  // find all products
-  // be sure to include its associated Category and Tag data
+  Product.findAll({
+    include: [
+      {
+        model: Category,
+        attributes: ['id', 'name'],
+      },
+      {
+        model: Tag,
+        attributes: ['id', 'name'],
+      },
+    ],
+  })
+    .then((dbProductData) => {
+      // serialize the data
+      const products = dbProductData.map((product) => product.get({ plain: true }));
+
+      res.json(products);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
+
 
 // get one product
 router.get('/:id', (req, res) => {
