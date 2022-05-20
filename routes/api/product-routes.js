@@ -9,20 +9,15 @@ router.get('/', (req, res) => {
     include: [
       {
         model: Category,
-        attributes: ['id', 'name'],
+        attributes: ['id', 'category_name'],
       },
       {
         model: Tag,
-        attributes: ['id', 'name'],
+        attributes: ['id', 'tag_name'],
       },
     ],
   })
-    .then((dbProductData) => {
-      // serialize the data
-      const products = dbProductData.map((product) => product.get({ plain: true }));
-
-      res.json(products);
-    })
+    .then(dbProductData => res.json(dbProductData))
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
