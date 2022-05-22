@@ -82,8 +82,8 @@ router.delete('/:id', (req, res) => {
       id: req.params.id,
     },
   }) .then(dbCategoryData => {
-    if (!dbCategoryData[0]) {
-      res.status(404).json({ message: 'This id does not exist!' });
+    if (!dbCategoryData) {
+      res.status(404).json({ message: 'Succesfully Deleted this Item!' });
       return;
     }
     res.json(dbCategoryData);
