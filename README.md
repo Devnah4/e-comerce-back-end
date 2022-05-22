@@ -1,10 +1,12 @@
 # e-comerce-back-end
 Back-end system using Express and Sequelize to edit data
+***
 
 ## Preview
 
 ![mod13demo](https://user-images.githubusercontent.com/98830462/169703058-51855c26-7ee2-4233-b43c-ec24e0b23b46.PNG)
 [Demo](https://www.youtube.com/watch?v=ND7LVlr3UkE)
+***
 
 ## Install
 
@@ -34,11 +36,13 @@ step 4:
 node server
 ```
 
-<p> I recommend [Insomnia](https://insomnia.rest/) for testing and usage</p>
+I recommend [Insomnia](https://insomnia.rest/) for testing and usage
+***
 
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+***
 
 ## Made with
 
