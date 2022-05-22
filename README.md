@@ -34,12 +34,7 @@ step 4:
 node server
 ```
 
-<p> I recommend ![Insomnia](https://insomnia.rest/) for testing and usage</p>
-
-## Credits
-
-- Forked from [Coding Bootcamp](https://github.com/coding-boot-camp)
-- Uses [Node.js](https://nodejs.org/en/)
+<p> I recommend [Insomnia](https://insomnia.rest/) for testing and usage</p>
 
 ## License
 
@@ -47,6 +42,8 @@ node server
 
 ## Made with
 
+- Forked from [Coding Bootcamp](https://github.com/coding-boot-camp)
+- Uses [Node.js](https://nodejs.org/en/)
 - [sequelize](https://sequelize.org/)
 - [mysql2](https://dev.mysql.com/doc/)
 - [express](https://expressjs.com/)
