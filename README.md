@@ -4,8 +4,8 @@ Back-end system using Express and Sequelize to edit data
 
 ## Preview
 
+[Click here for a Video demo!](https://www.youtube.com/watch?v=ND7LVlr3UkE)
 ![mod13demo](https://user-images.githubusercontent.com/98830462/169703058-51855c26-7ee2-4233-b43c-ec24e0b23b46.PNG)
-[Demo](https://www.youtube.com/watch?v=ND7LVlr3UkE)
 ***
 
 ## Install
